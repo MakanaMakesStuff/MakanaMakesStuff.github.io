@@ -1,3 +1,7 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
 html, body{
     width: 100%;
     height: 100%;
@@ -52,7 +56,6 @@ header img{
     top: 115px;
 }
 .menu li{
-    list-style: none;
     display: inline-block;
     margin-left: 30px;
 }
@@ -99,9 +102,9 @@ label{
     background-size: contain;
     z-index: 4;
     position: absolute;
-    margin: -50px 0px 0px -50px;
-    width: 100px;
-    height: 100px;
+    margin: -35px 0px 0px -35px;
+    width: 80px;
+    height: 80px;
 }
 #quote{
     position: relative;
@@ -160,12 +163,12 @@ label{
 }
 section{
     position: relative;
-    height: 1000px;
+    height: auto;
     width:  90%;
     margin: 0 auto;
     text-align: center;
 }
-section h1{
+section > h1{
     position: relative;
     top: 90px;
     font-size: 32px;
@@ -207,6 +210,64 @@ section h1{
     width: 140px;
     height: 250px;
     display: block;
+}
+article{
+    position: relative;
+    margin: 0 auto;
+    top: 175px;
+    width: 100%;
+}
+article h1{
+    position: relative;
+    font-size: 32px;
+    font-family: "Segoe UI Light";
+    color: dimgrey;
+    margin: 0 auto;
+}
+#content{
+    text-align: justify;
+    font-family: "Segoe UI";
+    color: dimgrey;
+}
+.bottom-menu{
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    top: 250px;
+}
+.bottom-menu #social, #menu{
+    z-index: 5;
+    float: left;
+    display: inline-block;
+}
+.bottom-menu #menu, #copyright{
+    position: relative;
+}
+.bottom-menu p, a{
+    font-family: "Segoe UI";
+    color: #49643C;
+}
+#menu li{
+    margin-top: 15px;
+}
+#social{
+    position: relative;
+}
+#social li{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url(../resources/social-icons.png);
+    background-size: cover;
+}
+footer{
+    margin: 0 auto;
+    position: relative;
+    top: 225px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../resources/footer.png);
+    background-size: cover;
 }
 @media screen and (max-width: 620px) {
         #nav label{
@@ -254,7 +315,7 @@ section h1{
             background-color: rgba(230,255,210,1);
         }
         span{
-            color: black;
+            color: forestgreen;
         }
         #mobile_contact{
             display: block;
