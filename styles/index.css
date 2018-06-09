@@ -215,7 +215,7 @@ article{
     position: relative;
     margin: 0 auto;
     top: 175px;
-    width: 100%;
+    width: 500px;
 }
 article h1{
     position: relative;
@@ -270,6 +270,12 @@ footer{
     background-size: cover;
 }
 @media screen and (max-width: 620px) {
+        article{
+            position: relative;
+            margin: 0 auto;
+            top: 175px;
+            width: 100%;
+        }
         #nav label{
             position: relative;
             top: 35px;
